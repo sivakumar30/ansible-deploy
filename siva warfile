@@ -1,0 +1,13 @@
+---
+ -hosts: webserver
+  sudo: yes
+  become: yes
+  tasks: 
+    -name: restart the tomcat
+     service:
+       name: restart the tomcat
+       state: retart the service
+    -name: deploy the warfile into tomcat
+      copy:
+        src: "{{      }}"
+        dest: "{{      }}"
